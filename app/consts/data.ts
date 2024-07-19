@@ -1,40 +1,8 @@
-import { IconType } from "react-icons";
 import { FaReact, FaHtml5, FaCss3, FaJs, FaVuejs } from "react-icons/fa";
 import { SiRedux, SiTypescript, SiNestjs, SiMongodb, SiFigma, SiPython, SiChakraui, SiTailwindcss, SiVite, SiMysql, SiMarkdown, SiArchlinux, SiUbuntu, SiPostman, SiVisualstudiocode, SiNeovim } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
-
-export enum ETechnologies {
-    HTML = "HTML",
-    CSS = "CSS",
-    JavaScript = "JavaScript",
-    TypeScript = "TypeScript",
-    Go = "Go",
-    Redux = "Redux",
-    Python = "Python",
-    Markdown = "Markdown",
-    React = "React",
-    NextJs = "Next.js",
-    VueJs = "Vue.js",
-    NestJs = "Nest.js",
-    ChakraUI = "ChakraUI",
-    TailwindCSS = "TailwindCSS",
-    Vite = "Vite",
-    SQL = "SQL",
-    MongoDB = "MongoDB",
-    ArchLinux = "Arch Linux",
-    Ubuntu = "Ubuntu",
-    Postman = "Postman",
-    VisualStudioCode = "Visual Studio Code",
-    Nvim = "Nvim",
-    Figma = "Figma"
-}
-
-
-export interface ISkillItem {
-    name: string;
-    icon: IconType;
-}
+import { ISkillItem } from "../interfaces/interfaces";
 
 export const languages: ISkillItem[] = [
     { name: "HTML", icon: FaHtml5 },

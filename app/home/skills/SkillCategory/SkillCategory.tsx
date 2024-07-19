@@ -1,5 +1,5 @@
 import { SkillItem } from '@/app/home/skills/skillItem/SkillItem';
-import { ISkillItem } from '@/app/consts/data';
+import { ISkillItem } from '@/app/interfaces/interfaces';
 
 interface Props {
     title: string;

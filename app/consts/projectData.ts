@@ -1,25 +1,25 @@
-import { ETechnologies } from "./data"
+import { ETechnologies } from "../interfaces/interfaces";
 
 export interface IProject {
-    name: string
-    technologies: string[]
+    name: string;
+    technologies: string[];
 }
 
 export const projectData = [
     {
-        name: "VibeCommerce",
-        technologies: [ETechnologies.React, ETechnologies.TypeScript, ETechnologies.MongoDB]
+        name: "quantumvflux",
+        technologies: [ETechnologies.React, ETechnologies.TypeScript, ETechnologies.MongoDB],
     },
     {
-        name: "Patas",
-        technologies: [ETechnologies.React, ETechnologies.CSS, ETechnologies.Go]
+        name: "dnd-test",
+        technologies: [ETechnologies.React, ETechnologies.CSS, ETechnologies.Go],
     },
     {
-        name: "VibeCommerce",
-        technologies: [ETechnologies.React, ETechnologies.TypeScript, ETechnologies.MongoDB]
+        name: "lazyvim-config",
+        technologies: [ETechnologies.React, ETechnologies.TypeScript, ETechnologies.MongoDB],
     },
     {
-        name: "Patas",
-        technologies: [ETechnologies.React, ETechnologies.CSS, ETechnologies.Go]
+        name: "bullsh*t",
+        technologies: [ETechnologies.React, ETechnologies.CSS, ETechnologies.Go],
     }
 ]
