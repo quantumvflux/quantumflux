@@ -1,12 +1,12 @@
 import { SkillItem } from '@/app/home/skills/skillItem/SkillItem';
 import { ISkillItem } from '@/app/consts/data';
 
-interface SkillCategoryProps {
+interface Props {
     title: string;
     skills: ISkillItem[];
 }
 
-export const SkillCategory: React.FC<SkillCategoryProps> = ({ title, skills }) => (
+export const SkillCategory = ({ title, skills }: Props) => (
     <div className='mb-4'>
         <h4 className='font-medium text-xl'>{title}</h4>
         <div className='flex gap-1 flex-wrap'>
