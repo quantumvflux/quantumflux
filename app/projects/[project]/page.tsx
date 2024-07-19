@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation"
 
 const page = () => {
     const repo = usePathname().split('/')[2]
-    console.log(repo)
     return (
         <Section>
             <div className="font-medium text-xl">

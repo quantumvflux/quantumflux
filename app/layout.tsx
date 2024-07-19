@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* <div className="overflow-y-hidden font-vt bg-[#1e66f5] text-text pb-8"> */}
-        <div className="overflow-y-hidden font-vt bg-[#7287fd] text-text pb-8">
+        <div className="overflow-y-hidden font-vt  text-text pb-9">
           <Navbar />
           <Hero />
           {children}
