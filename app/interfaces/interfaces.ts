@@ -1,8 +1,15 @@
+import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 
 export interface ISkillItem {
     name: string;
     icon: IconType;
+}
+
+export interface IJobz {
+    name: string;
+    image: StaticImageData;
+    description: string;
 }
 
 export enum ETechnologies {

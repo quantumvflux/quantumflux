@@ -5,8 +5,9 @@ export const Hero = () => {
     return (
         <div className="w-full flex justify-center items-center py-32">
             <div className="flex flex-col justify-center items-center gap-4">
-                <div className="rounded-full overflow-hidden h-64 w-64 relative border-4 border-[#f5bde6]">
-                    <Image src={profile} alt="Profile" fill priority />
+                <div className="rounded-full overflow-hidden h-64 w-64 relative border-4 border-[#f5bde6] ">
+                    {/* <Image src={profile} alt="Profile" fill priority /> */}
+                    <Image src={"https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNlYW4waDlxNWQwNjRoeGxxZ2J6Z3hkamdrOXFuNGd5MW52cTAxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bqSkJ4IwNcoZG/giphy.webp"} alt="Profile" fill priority className="object-cover" />
                 </div>
                 {/* <div className="flex flex-col items-center gap-4 text-2xl text-[#f4b8e4] text-center"> */}
                 <div className="flex flex-col items-center gap-4 text-2xl text-[#f5bde6] text-center">

@@ -2,7 +2,9 @@ import { FaReact, FaHtml5, FaCss3, FaJs, FaVuejs } from "react-icons/fa";
 import { SiRedux, SiTypescript, SiNestjs, SiMongodb, SiFigma, SiPython, SiChakraui, SiTailwindcss, SiVite, SiMysql, SiMarkdown, SiArchlinux, SiUbuntu, SiPostman, SiVisualstudiocode, SiNeovim } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
-import { ISkillItem } from "../interfaces/interfaces";
+import { IJobz, ISkillItem } from "../interfaces/interfaces";
+
+import image from "/public/assets/profile-1.jpg"
 
 export const languages: ISkillItem[] = [
     { name: "HTML", icon: FaHtml5 },
@@ -38,6 +40,24 @@ export const tools: ISkillItem[] = [
     { name: "Visual Studio Code", icon: SiVisualstudiocode },
     { name: "Nvim", icon: SiNeovim },
     { name: "Figma", icon: SiFigma },
+]
+
+export const jobz: IJobz[] = [
+    {
+        name: "Notimation",
+        image: image,
+        description: "React developer"
+    },
+    {
+        name: "Adrian Moreno",
+        image: image,
+        description: "Personal portfolio development"
+    },
+    {
+        name: "Nephilim Band",
+        image: image,
+        description: "Landing page development"
+    }
 ]
 
 languages.sort((a, b) => a.name.localeCompare(b.name));
