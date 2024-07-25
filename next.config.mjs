@@ -8,6 +8,12 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "media0.giphy.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
