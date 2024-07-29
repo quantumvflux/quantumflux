@@ -8,7 +8,7 @@ export interface ISkillItem {
 
 export interface IJobz {
     name: string;
-    image: StaticImageData;
+    image: StaticImageData | string;
     description: string;
 }
 

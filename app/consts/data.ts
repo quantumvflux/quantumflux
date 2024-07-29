@@ -4,7 +4,10 @@ import { FaGolang } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { IJobz, ISkillItem } from "../interfaces/interfaces";
 
-import image from "/public/assets/profile-1.jpg"
+import notimationLogo from "/public/assets/jobs/notimation-logo.jpg"
+import undeadLogo from "/public/assets/jobs/undead-logo.png"
+import adrianLogo from "/public/assets/jobs/adrian-logo.png"
+import nephilimLogo from "/public/assets/jobs/nephilim-logo.jpg"
 
 export const languages: ISkillItem[] = [
     { name: "HTML", icon: FaHtml5 },
@@ -46,22 +49,22 @@ export const tools: ISkillItem[] = [
 export const jobz: IJobz[] = [
     {
         name: "Notimation",
-        image: image,
+        image: notimationLogo,
         description: "React developer"
     },
     {
         name: "Undead Devz",
-        image: image,
+        image: undeadLogo,
         description: "Fullstack developer"
     },
     {
         name: "Adrian Moreno",
-        image: image,
+        image: adrianLogo,
         description: "Personal portfolio development"
     },
     {
         name: "Nephilim Band",
-        image: image,
+        image: nephilimLogo,
         description: "Landing page development"
     }
 ]

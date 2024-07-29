@@ -6,7 +6,9 @@ export const JobItem = ({ image, description, name }: IJobz) => {
     return (
         <Link href={"/"}>
             <div className="bg-white w-64 flex rounded-md p-4 gap-4 shadow-sm hover:saturate-200">
-                <Image src={image} height={100} width={100} alt={name} className="rounded-md" />
+                <div className="relative h-20 w-20 overflow-hidden rounded-md ">
+                    <Image src={image} alt={name} fill className="object-cover" />
+                </div>
                 <div>
                     <p className="font-semibold text-xl">{name}</p>
                     <p>{description}</p>

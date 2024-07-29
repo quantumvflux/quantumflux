@@ -7,7 +7,7 @@ const page = () => {
     return (
         <Section>
             <Heading text="my projects:" />
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-wrap items-stretch justify-center gap-8">
                 {
                     projectData.length > 0 ? (
                         projectData.map((project: IProject) => (
