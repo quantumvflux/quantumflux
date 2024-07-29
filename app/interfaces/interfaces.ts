@@ -6,10 +6,16 @@ export interface ISkillItem {
     icon: IconType;
 }
 
+export interface ISkillSection {
+    title: string;
+    skills: ISkillItem[]
+}
+
 export interface IJobz {
     name: string;
     image: StaticImageData | string;
     description: string;
+    link: string;
 }
 
 export enum ETechnologies {

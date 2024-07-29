@@ -1,4 +1,5 @@
-import { ISkillItem, languages, frameworks, databases, tools } from '@/app/consts/data';
+import { languages, frameworks, databases, tools } from '@/app/consts/data';
+import { ISkillItem } from '../interfaces/interfaces';
 
 export const getSkill = (name: string): ISkillItem | undefined => {
     const allSkills = [...languages, ...frameworks, ...databases, ...tools];
