@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { getRandomPfp } from "@/app/consts/data"
+import { getRandomPfp } from "@/app/functions/getRandomPfp"
 
 export const Hero = () => {
     const pfp = getRandomPfp()
@@ -11,7 +11,7 @@ export const Hero = () => {
                     <Image src={pfp.imageUrl} alt="Profile" fill className="object-cover" priority />
                 </div>
                 <div className="flex flex-col items-center gap-4 text-2xl text-[#f5bde6] text-center">
-                    <h1 className="font-bold text-6xl ">Marcos Baravalle</h1>
+                    <h1 className="font-bold text-6xl">Marcos Baravalle</h1>
                     <h2>Software engineer</h2>
                 </div>
             </div>

@@ -6,7 +6,7 @@ export const Main = () => {
         <div>
             <Section>
                 <Heading text="about:" />
-                <p className="text-xl">some boring sh*t</p>
+                <p className="text-xl">Some boring sh*t right here...</p>
             </Section>
         </div>
     )

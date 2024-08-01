@@ -102,16 +102,3 @@ export const jobz: IJobz[] = [
         link: ""
     }
 ]
-
-
-
-export const pfpData = [
-    { imageUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHN2YWliajFuY3AxMXJ4MGZod2FkYW9qcnR2Y2JzYjczamlqbnhjaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11tmhZRjavMMIE/giphy.webp" },
-    { imageUrl: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNlYW4waDlxNWQwNjRoeGxxZ2J6Z3hkamdrOXFuNGd5MW52cTAxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bqSkJ4IwNcoZG/giphy.webp" },
-    { imageUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXVkcTJwdTNsd3RveGRldmdpanFidzZrbzhmYXFyeDRoOXBxdXRxdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UYzNgRSTf9X1e/giphy.webp" },
-    { imageUrl: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2VraWthNnRhbTh3NTQ1Zzk1NGl6dnFpa3E2Znc4MnhjY3RtM254YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N4AIdLd0D2A9y/giphy.webp" }
-]
-
-export const getRandomPfp = () => {
-    return pfpData[Math.floor(Math.random() * pfpData.length)]
-}

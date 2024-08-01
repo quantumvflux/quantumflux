@@ -6,8 +6,4 @@ export interface IProject {
 }
 
 export const projectData: IProject[] = [
-    {
-        name: "lazyvim-config",
-        technologies: [ETechnologies.React, ETechnologies.CSS, ETechnologies.JavaScript]
-    }
 ]

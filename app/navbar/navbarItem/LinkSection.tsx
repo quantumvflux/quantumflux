@@ -6,7 +6,7 @@ export const LinkSection = () => {
             <LinkItem url="/" linkTitle="home" />
             <LinkItem url="/projects" linkTitle="projects" />
             <LinkItem url="/socials" linkTitle="socials" />
-            <LinkItem url="/" linkTitle="extra" />
+            <LinkItem url="/extras" linkTitle="extra" />
         </div>
     )
 }
