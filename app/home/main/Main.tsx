@@ -7,8 +7,8 @@ export const Main = () => {
       <Section>
         <Heading text="about:" />
         <p className="text-xl">
-          Hello, everyone! I'm Marcos, a freelance web developer hailing from
-          Argentina. Specializing in crafting bespoke digital marketing
+          Hello, everyone! I&apos;m Marcos, a freelance web developer hailing
+          from Argentina. Specializing in crafting bespoke digital marketing
           solutions, my focus is on tailoring these to suit your enterprise or
           personal brand. My creative thinking and problem-solving abilities are
           fueled by a passion for technology, entrepreneurship, video games,
