@@ -51,7 +51,7 @@ export const languages: ISkillItem[] = [
   { name: "Go", icon: FaGolang },
   { name: "Python", icon: SiPython },
   { name: "Markdown", icon: SiMarkdown },
-];
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export const frameworks: ISkillItem[] = [
   { name: "React", icon: FaReact },
@@ -62,13 +62,13 @@ export const frameworks: ISkillItem[] = [
   { name: "TailwindCSS", icon: SiTailwindcss },
   { name: "Vite", icon: SiVite },
   { name: "Redux", icon: SiRedux },
-];
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export const databases: ISkillItem[] = [
   { name: "SQL", icon: SiMysql },
   { name: "MongoDB", icon: SiMongodb },
   { name: "Prisma", icon: SiPrisma },
-];
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export const tools: ISkillItem[] = [
   { name: "Arch Linux", icon: SiArchlinux },
@@ -77,12 +77,7 @@ export const tools: ISkillItem[] = [
   { name: "Visual Studio Code", icon: SiVisualstudiocode },
   { name: "Nvim", icon: SiNeovim },
   { name: "Figma", icon: SiFigma },
-];
-
-languages.sort((a, b) => a.name.localeCompare(b.name));
-frameworks.sort((a, b) => a.name.localeCompare(b.name));
-databases.sort((a, b) => a.name.localeCompare(b.name));
-tools.sort((a, b) => a.name.localeCompare(b.name));
+].sort((a, b) => a.name.localeCompare(b.name));
 
 export const skillCategories: ISkillSection[] = [
   {
