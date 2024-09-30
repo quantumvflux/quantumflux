@@ -1,12 +1,17 @@
-import Link from "next/link"
+import Link from "next/link";
 
 interface Props {
-    linkTitle: string;
-    url: string;
+  data: string;
 }
 
-export const LinkItem = ({ linkTitle, url }: Props) => {
-    return (
-        <Link className="font-medium text-xl hover:font-bold transition-all" href={url}>/{linkTitle}</Link>
-    )
-}
+export const LinkItem = ({ data }: Props) => {
+  const formattedData = data === "/" ? "/home" : data;
+  return (
+    <Link
+      className="font-medium text-xl hover:font-bold transition-all"
+      href={data}
+    >
+      {formattedData}
+    </Link>
+  );
+};
