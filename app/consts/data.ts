@@ -28,6 +28,21 @@ import adrianLogo from "/public/assets/jobs/adrian-logo.png";
 import nephilimLogo from "/public/assets/jobs/nephilim-logo.jpg";
 import riffaoLogo from "/public/assets/jobs/riffao-logo.png";
 
+export const urls = [
+  {
+    data: "/",
+  },
+  {
+    data: "/projects",
+  },
+  {
+    data: "/socials",
+  },
+  {
+    data: "/extra",
+  },
+];
+
 export const languages: ISkillItem[] = [
   { name: "HTML", icon: FaHtml5 },
   { name: "CSS", icon: FaCss3 },
