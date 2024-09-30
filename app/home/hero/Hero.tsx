@@ -19,7 +19,7 @@ export const Hero = () => {
         <div className="flex flex-col items-center gap-2 text-2xl text-[#f5bde6] text-center">
           <h1 className="font-bold text-6xl">quantum flux</h1>
           <p className="text-lg">(or just quantum)</p>
-          <h2 className="mt-6">Software engineer</h2>
+          <h2 className="mt-6">Software developer</h2>
         </div>
       </div>
     </div>
