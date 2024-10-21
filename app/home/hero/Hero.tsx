@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { getRandomPfp } from "@/app/functions/getRandomPfp";
+import profile from "@/public/assets/profile-1.jpg";
 
 export const Hero = () => {
-  const pfp = getRandomPfp();
-
   return (
     <div className="w-full flex justify-center items-center py-32">
       <div className="flex flex-col justify-center items-center gap-4">
         <div className="rounded-full overflow-hidden h-64 w-64 relative border-4 border-[#f5bde6] ">
           <Image
-            src={pfp.imageUrl}
+            src={profile}
             alt="Profile"
             fill
             className="object-cover"

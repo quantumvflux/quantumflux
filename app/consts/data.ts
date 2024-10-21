@@ -17,6 +17,8 @@ import {
   SiVisualstudiocode,
   SiNeovim,
   SiPrisma,
+  SiMui,
+  SiStrapi,
 } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
@@ -62,6 +64,8 @@ export const frameworks: ISkillItem[] = [
   { name: "TailwindCSS", icon: SiTailwindcss },
   { name: "Vite", icon: SiVite },
   { name: "Redux", icon: SiRedux },
+  { name: "Material UI", icon: SiMui },
+  { name: "Strapi", icon: SiStrapi },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export const databases: ISkillItem[] = [

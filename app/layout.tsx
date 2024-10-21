@@ -7,7 +7,7 @@ import { Hero } from "./home/hero/Hero";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "quantum flux | software engineer",
+  title: "quantum flux | software developer",
   description: "",
 };
 

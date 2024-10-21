@@ -1,12 +1,32 @@
 export const getReadme = async (owner: string, repo: string) => {
-    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/readme`, {
+  try {
+    const response = await fetch(
+      `https://api.github.com/repos/${owner}/${repo}/readme`,
+      {
         headers: {
-            Accept: 'application/vnd.github.v3.raw'
-        }
-    })
+          Accept: "application/vnd.github.v3.raw",
+        },
+      }
+    );
+
     if (!response.ok) {
-        throw new Error("Failed to fetch data")
+      console.warn(
+        `README for ${owner}/${repo} not found, loading local version.`
+      );
+      return await fetchLocalReadme();
     }
-    const data = response.text()
-    return data
-}
+
+    return await response.text();
+  } catch (error) {
+    console.error("Error fetching README:", error);
+    return await fetchLocalReadme();
+  }
+};
+
+const fetchLocalReadme = async () => {
+  const response = await fetch("/assets/default-readme.md");
+  if (!response.ok) {
+    throw new Error("Failed to load local README");
+  }
+  return await response.text();
+};

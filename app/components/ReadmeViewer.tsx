@@ -1,38 +1,40 @@
-import React, { useEffect, useState } from 'react';
-import { getReadme } from '../functions/getReadme';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from "react-markdown";
+import { useReadme } from "@/hooks/useReadme";
+import { IProject } from "../consts/projectData";
+import remarkGfm from "remark-gfm";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/github.css";
+import "./readmeViewer.css";
 
 type ReadmeViewerProps = {
-    owner: string;
-    repo: string;
+  project: IProject;
+  owner: string;
+  repo: string;
 };
 
-const ReadmeViewer: React.FC<ReadmeViewerProps> = ({ owner, repo }) => {
-    const [readme, setReadme] = useState<string | null>(null);
-    const [error, setError] = useState<string | null>(null);
+const ReadmeViewer: React.FC<ReadmeViewerProps> = ({
+  project,
+  owner,
+  repo,
+}) => {
+  const { readme, error, loading } = useReadme(owner, repo, project.readme);
 
-    useEffect(() => {
-        const getData = async () => {
-            try {
-                const data = await getReadme("quantumvflux", repo);
-                setReadme(data);
-            } catch (err) {
-                setError('Failed to load README');
-            }
-        };
+  if (loading) {
+    return <div>doing some black magic...</div>;
+  }
 
-        getData();
-    }, [owner, repo]);
+  if (error) {
+    return <div>{error}</div>;
+  }
 
-    if (error) {
-        return <div>{error}</div>;
-    }
-
-    if (!readme) {
-        return <div>doing some black magic...</div>;
-    }
-
-    return <ReactMarkdown>{readme}</ReactMarkdown>;
+  return (
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      rehypePlugins={[rehypeHighlight]}
+    >
+      {readme}
+    </ReactMarkdown>
+  );
 };
 
 export default ReadmeViewer;
