@@ -19,7 +19,7 @@ export const ProjectCard = ({ name, technologyNames, image }: Props) => {
       className="mb-10 flex flex-col items-center py-4 px-4 min-h-full w-72 opacity-85  hover:opacity-100 transition-opacity bg-white rounded-md shadow-md"
       href={`/projects/${sanitizedLink}`}
     >
-      <div className="h-64 w-64 relative ">
+      <div className="h-64 w-64 relative">
         <Image src={image} alt="Profile" fill className="rounded-md" />
       </div>
       <p className="font-bold text-2xl mb-2">{name}</p>

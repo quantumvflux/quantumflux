@@ -15,7 +15,6 @@ export interface IJobz {
   name: string;
   image: StaticImageData | string;
   description: string;
-  link: string;
   isRepo?: boolean;
 }
 

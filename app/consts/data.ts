@@ -26,7 +26,6 @@ import { IJobz, ISkillItem, ISkillSection } from "../interfaces/interfaces";
 
 import notimationLogo from "/public/assets/jobs/notimation-logo.jpg";
 import undeadLogo from "/public/assets/jobs/undead-logo.png";
-import adrianLogo from "/public/assets/jobs/adrian-logo.png";
 import nephilimLogo from "/public/assets/jobs/nephilim-logo.jpg";
 import riffaoLogo from "/public/assets/jobs/riffao-logo.png";
 
@@ -39,9 +38,6 @@ export const urls = [
   },
   {
     data: "/socials",
-  },
-  {
-    data: "/extra",
   },
 ];
 
@@ -107,30 +103,20 @@ export const jobz: IJobz[] = [
     name: "Notimation",
     image: notimationLogo,
     description: "Frontend developer",
-    link: "",
   },
   {
     name: "Undead Devz",
     image: undeadLogo,
     description: "Fullstack developer",
-    link: "/",
   },
   {
     name: "Riffao",
     image: riffaoLogo,
-    description: "Frontend development",
-    link: "/",
-  },
-  {
-    name: "Adrian Moreno",
-    image: adrianLogo,
-    description: "Personal portfolio development",
-    link: "/",
+    description: "Frontend developer",
   },
   {
     name: "Nephilim Band",
     image: nephilimLogo,
-    description: "Landing page development",
-    link: "/",
+    description: "Landing page",
   },
 ];

@@ -1,5 +1,4 @@
 import { Section } from "@/app/components/Section";
-import Link from "next/link";
 import { ReadmeSection } from "./readmeSection/ReadmeSection";
 
 const page = () => {
