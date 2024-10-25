@@ -31,7 +31,6 @@ export const ReadmeSection = () => {
             >
               Github repo
             </Link>
-            <span>//</span>
           </>
         )}
         <Link
