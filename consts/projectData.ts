@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { ETechnologies } from "../interfaces/interfaces";
+import { ETechnologies } from "@/interfaces/interfaces";
 import defaultImage from "@/public/assets/profile-1.jpg";
 import tantra from "@/public/assets/projects/tantratouch/tantratrouch.png";
 import uitool from "@/public/assets/projects/uitool/uitool.png";

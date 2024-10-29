@@ -1,4 +1,4 @@
-import { IJobz } from "@/app/interfaces/interfaces";
+import { IJobz } from "@/interfaces/interfaces";
 import Image from "next/image";
 import Link from "next/link";
 

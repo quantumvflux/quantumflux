@@ -1,8 +1,8 @@
 import { Heading } from "@/app/components/Heading";
 import { Section } from "@/app/components/Section";
-import { jobz } from "@/app/consts/data";
+import { jobz } from "@/consts/data";
 import { JobItem } from "./jobItem/JobItem";
-import { IJobz } from "@/app/interfaces/interfaces";
+import { IJobz } from "@/interfaces/interfaces";
 
 export const JobsSection = () => {
   return (

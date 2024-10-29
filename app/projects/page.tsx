@@ -1,6 +1,6 @@
 import { Section } from "../components/Section";
 import { ProjectCard } from "./projectCard/ProjectCard";
-import { projectData } from "../consts/projectData";
+import { projectData } from "../../consts/projectData";
 import { Heading } from "../components/Heading";
 
 const page = () => {

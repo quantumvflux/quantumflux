@@ -1,4 +1,4 @@
-import { getReadme } from "@/app/functions/getReadme";
+import { getReadme } from "@/functions/getReadme";
 import { useEffect, useState } from "react";
 
 type UseReadmeResult = {

@@ -1,5 +1,5 @@
 import { LinkItem } from "./linkItem/LinkItem";
-import { urls } from "../../consts/data";
+import { urls } from "../../../consts/data";
 
 export const LinkSection = () => {
   return (

@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import { useReadme } from "@/hooks/useReadme";
-import { IProject } from "../consts/projectData";
+import { IProject } from "../../consts/projectData";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github.css";

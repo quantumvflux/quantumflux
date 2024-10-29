@@ -1,7 +1,7 @@
 "use client";
 import ReadmeViewer from "@/app/components/ReadmeViewer";
 import { usePathname } from "next/navigation";
-import { projectData } from "@/app/consts/projectData";
+import { projectData } from "@/consts/projectData";
 import { sanitizeString } from "@/helpers/sanitizeString";
 import Link from "next/link";
 

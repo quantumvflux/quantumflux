@@ -22,7 +22,7 @@ import {
 } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
-import { IJobz, ISkillItem, ISkillSection } from "../interfaces/interfaces";
+import { IJobz, ISkillItem, ISkillSection } from "@/interfaces/interfaces";
 
 import notimationLogo from "/public/assets/jobs/notimation-logo.jpg";
 import undeadLogo from "/public/assets/jobs/undead-logo.png";

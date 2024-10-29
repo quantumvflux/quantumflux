@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { SkillItem } from "@/app/home/skills/skillItem/SkillItem";
-import { getSkills } from "@/app/functions/getSkill";
+import { getSkills } from "@/functions/getSkill";
 import Link from "next/link";
 import { sanitizeString } from "@/helpers/sanitizeString";
 
