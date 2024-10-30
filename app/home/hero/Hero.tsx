@@ -5,7 +5,7 @@ import { useAtom } from "jotai";
 
 export const Hero = () => {
   const [_isDialogPlaying, setIsDialogPlaying] = useAtom(isDialogPlayingAtom);
-  const [isGameComplete, setIsGameComplete] = useAtom(isGameCompleteAtom);
+  const [isGameComplete] = useAtom(isGameCompleteAtom);
 
   const handleClick = () => {
     setIsDialogPlaying(true);
@@ -17,7 +17,7 @@ export const Hero = () => {
     <div className="w-full flex justify-center items-center py-32">
       <div className="flex flex-col justify-center items-center gap-4">
         <div
-          className="rounded-full h-64 w-64 relative border-4 border-[#f5bde6] hover:cursor-pointer"
+          className="rounded-full h-64 w-64 relative border-4 border-[#f5bde6] hover:cursor-pointer hover:scale-105 transition-all"
           onClick={handleClick}
         >
           <Image

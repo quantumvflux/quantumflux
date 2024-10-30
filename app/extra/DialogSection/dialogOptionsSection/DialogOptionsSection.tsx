@@ -15,6 +15,7 @@ export const DialogOptionsSection = ({
       setIsDialogPlaying(false);
       setIsGamePlaying(true);
     }
+    setIsDialogPlaying(false);
   };
 
   return (

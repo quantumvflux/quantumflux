@@ -26,8 +26,12 @@ export const DialogSection = () => {
   );
 
   const handleNextDialog = () => {
-    setDialogIndex((prevIndex) => (prevIndex + 1) % condition.length);
-    setCurrentDialog(condition[dialogIndex]);
+    if (dialogIndex < condition.length - 1) {
+      setDialogIndex((prevIndex) => prevIndex + 1);
+      setCurrentDialog(condition[dialogIndex + 1]);
+    } else {
+      handleCloseDialog();
+    }
   };
 
   const handleCloseDialog = () => {
@@ -35,8 +39,8 @@ export const DialogSection = () => {
   };
 
   return (
-    <div className="w-11/12 md:w-2/3 h-60 md:h-[300px] flex justify-center items-center fixed bottom-8 left-0 right-0 m-auto bg-gray-300 border-4 border-gray-600 overflow-hidden rounded-xl">
-      <div className="relative h-60 w-56 md:h-[300px] md:w-[400px]">
+    <div className="w-11/12 md:w-2/3 h-60 md:h-[250px] flex justify-center items-center fixed bottom-8 left-0 right-0 m-auto bg-gray-300 border-4 border-gray-600 overflow-hidden rounded-xl z-50">
+      <div className="relative h-60 w-56 md:h-[250px] md:w-[300px]">
         <Image
           src={profile}
           alt="Profile"
@@ -44,18 +48,15 @@ export const DialogSection = () => {
           className="rounded-md object-cover"
         />
       </div>
-      <div className="h-60 md:h-[300px] w-full p-8 text-2xl relative">
+      <div className="h-60 md:h-[250px] w-full p-2 md:p-8 text-2xl relative">
         <TypeWriter text={currentDialog.text} />
         <DialogOptionsSection currentDialog={currentDialog} />
-        <div className="absolute bottom-4 right-8" onClick={handleNextDialog}>
-          <VscTriangleDown className="text-gray-500 hover:text-gray-800 hover:cursor-pointer h-12 w-12 animate-bounce" />
-        </div>
-        {/* <div
-          className="absolute top-8 right-8 text-gray-500 hover:text-gray-800 hover:cursor-pointer"
-          onClick={handleCloseDialog}
+        <div
+          className="absolute bottom-2 right-2 md:bottom-4 md:right-8"
+          onClick={handleNextDialog}
         >
-          <AiOutlineClose className="h-12 w-12" />
-        </div> */}
+          <VscTriangleDown className="text-gray-500 hover:text-gray-800 hover:cursor-pointer h-8 w-8 md:h-12 md:w-12 animate-bounce" />
+        </div>
       </div>
     </div>
   );
