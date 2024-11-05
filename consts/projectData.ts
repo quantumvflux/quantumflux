@@ -3,8 +3,6 @@ import { ETechnologies } from "@/interfaces/interfaces";
 import defaultImage from "@/public/assets/profile-1.jpg";
 import tantra from "@/public/assets/projects/tantratouch/tantratrouch.png";
 import uitool from "@/public/assets/projects/uitool/uitool.png";
-import nephilim from "@/public/assets/projects/nephilim/nephilim.png";
-import vibecommerce from "@/public/assets/projects/vibecommerce/vibecommerce.png";
 
 export interface IProject {
   name: string;
@@ -12,6 +10,7 @@ export interface IProject {
   image: StaticImageData;
   link: string;
   readme?: string;
+  company?: string;
 }
 
 export const projectData: IProject[] = [
@@ -28,6 +27,7 @@ export const projectData: IProject[] = [
     ].sort((a, b) => a.localeCompare(b)),
     readme: "/assets/projects/tantratouch/readme/tantratouch.md",
     link: "https://tantratouch-mdx.vercel.app/",
+    company: "Undead Devz",
   },
   {
     name: "UI Tool",
@@ -42,27 +42,32 @@ export const projectData: IProject[] = [
     ].sort((a, b) => a.localeCompare(b)),
     readme: "/assets/projects/uitool/readme/uitool.md",
     link: "https://uitool.com/",
+    company: "Notimation",
   },
   {
-    name: "Nephilim",
-    image: nephilim,
-    technologies: [
-      ETechnologies.HTML,
-      ETechnologies.JavaScript,
-      ETechnologies.CSS,
-    ].sort((a, b) => a.localeCompare(b)),
-    readme: "/assets/projects/uitool/readme/nephilim.md",
-    link: "https://nephilim-official-page.vercel.app/",
-  },
-  {
-    name: "VibeCommerce",
-    image: vibecommerce,
+    name: "Riffao",
+    image: defaultImage,
     technologies: [
       ETechnologies.React,
       ETechnologies.TypeScript,
+      ETechnologies.NextJs,
       ETechnologies.CSS,
       ETechnologies.TailwindCSS,
+      ETechnologies.Redux,
     ].sort((a, b) => a.localeCompare(b)),
-    link: "https://vibecommerce.vercel.app/",
+    link: "https://riffao.net/",
+    company: "Riffao",
   },
+  // {
+  //   name: "Nephilim",
+  //   image: nephilim,
+  //   technologies: [
+  //     ETechnologies.HTML,
+  //     ETechnologies.JavaScript,
+  //     ETechnologies.CSS,
+  //   ].sort((a, b) => a.localeCompare(b)),
+  //   readme: "/assets/projects/uitool/readme/nephilim.md",
+  //   link: "https://nephilim-official-page.vercel.app/",
+  //   company: "Freelance",
+  // },
 ];
