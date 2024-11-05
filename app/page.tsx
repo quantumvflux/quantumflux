@@ -13,7 +13,7 @@ const page = () => {
       <Main />
       <JobsSection />
       <Section>
-        <Heading text="my projects:" />
+        <Heading text="my jobs:" />
         <div className="flex flex-wrap items-stretch justify-center gap-8">
           {projectData.length > 0 ? (
             projectData.map(({ name, technologies, image, company }) => (

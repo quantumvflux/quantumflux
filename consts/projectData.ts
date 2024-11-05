@@ -3,6 +3,7 @@ import { ETechnologies } from "@/interfaces/interfaces";
 import defaultImage from "@/public/assets/profile-1.jpg";
 import tantra from "@/public/assets/projects/tantratouch/tantratrouch.png";
 import uitool from "@/public/assets/projects/uitool/uitool.png";
+import riffao from "@/public/assets/projects/riffao/riffao-logo.png";
 
 export interface IProject {
   name: string;
@@ -46,7 +47,7 @@ export const projectData: IProject[] = [
   },
   {
     name: "Riffao",
-    image: defaultImage,
+    image: riffao,
     technologies: [
       ETechnologies.React,
       ETechnologies.TypeScript,
