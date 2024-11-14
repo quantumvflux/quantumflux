@@ -13,16 +13,17 @@ const page = () => {
       <Main />
       <JobsSection />
       <Section>
-        <Heading text="my jobs:" />
+        <Heading text="my work:" />
         <div className="flex flex-wrap items-stretch justify-center gap-8">
           {projectData.length > 0 ? (
-            projectData.map(({ name, technologies, image, company }) => (
+            projectData.map(({ name, technologies, image, company, link }) => (
               <ProjectCard
                 key={name}
                 name={name}
                 technologyNames={technologies}
                 image={image}
                 company={company}
+                link={link}
               />
             ))
           ) : (

@@ -33,6 +33,7 @@ export const ReadmeSection = () => {
             </Link>
           </>
         )}
+        <span>/</span>
         <Link
           href={link}
           target="_blank"
