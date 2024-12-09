@@ -46,8 +46,8 @@ export const languages: ISkillItem[] = [
   { name: "CSS", icon: FaCss3 },
   { name: "JavaScript", icon: FaJs },
   { name: "TypeScript", icon: SiTypescript },
-  { name: "Go", icon: FaGolang },
-  { name: "Python", icon: SiPython },
+  // { name: "Go", icon: FaGolang },
+  // { name: "Python", icon: SiPython },
   { name: "Markdown", icon: SiMarkdown },
 ].sort((a, b) => a.name.localeCompare(b.name));
 

@@ -7,14 +7,14 @@ export const Main = () => {
       <Section>
         <Heading text="about:" />
         <p className="text-xl">
-          Hello, everyone! I&apos;m Marcos, a freelance web developer hailing
-          from Argentina. Specializing in crafting bespoke digital marketing
-          solutions, my focus is on tailoring these to suit your enterprise or
-          personal brand. My creative thinking and problem-solving abilities are
-          fueled by a passion for technology, entrepreneurship, video games,
-          music, and economics. Embracing new ideas and maintaining an open mind
-          allows me to approach projects from various angles, ensuring the
-          delivery of innovative solutions ^^
+          Hi, everyone! I&apos;m Marcos, a software developer from Argentina and
+          I create custom digital marketing solutions and software designed to
+          meet the unique needs of your business or personal brand.
+          <br /> My love for technology, video games, music production and
+          economics inspires my creativity and problem-solving skills giving me
+          the superpower of always being open to new ideas and perspectives,
+          which helps me tackle projects from different angles and deliver
+          fresh, innovative solutions.
         </p>
       </Section>
     </div>
