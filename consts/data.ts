@@ -28,6 +28,8 @@ import notimationLogo from "/public/assets/jobs/notimation-logo.jpg";
 import undeadLogo from "/public/assets/jobs/undead-logo.png";
 import nephilimLogo from "/public/assets/jobs/nephilim-logo.jpg";
 import riffaoLogo from "/public/assets/jobs/riffao-logo.png";
+import abstractLogo from "/public/assets/jobs/logo-abstract.png";
+import { TbBrandThreejs } from "react-icons/tb";
 
 export const urls = [
   {
@@ -62,6 +64,7 @@ export const frameworks: ISkillItem[] = [
   { name: "Redux", icon: SiRedux },
   { name: "Material UI", icon: SiMui },
   { name: "Strapi", icon: SiStrapi },
+  { name: "Three.js", icon: TbBrandThreejs },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export const databases: ISkillItem[] = [
@@ -100,6 +103,11 @@ export const skillCategories: ISkillSection[] = [
 
 export const jobz: IJobz[] = [
   {
+    name: "Abstract",
+    image: abstractLogo,
+    description: "Creative Developer",
+  },
+  {
     name: "Notimation",
     image: notimationLogo,
     description: "Frontend developer",
@@ -114,9 +122,9 @@ export const jobz: IJobz[] = [
     image: riffaoLogo,
     description: "Frontend developer",
   },
-  {
-    name: "Nephilim Band",
-    image: nephilimLogo,
-    description: "Landing page",
-  },
+  // {
+  //   name: "Nephilim Band",
+  //   image: nephilimLogo,
+  //   description: "Landing page",
+  // },
 ];

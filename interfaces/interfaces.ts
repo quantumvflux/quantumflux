@@ -44,4 +44,5 @@ export enum ETechnologies {
   Figma = "Figma",
   MaterialUI = "Material UI",
   Strapi = "Strapi",
+  Threejs = "Three.js",
 }
