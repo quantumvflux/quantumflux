@@ -73,16 +73,16 @@ export const projectData: IProject[] = [
     link: "https://riffao.net/",
     company: "Riffao",
   },
-  {
-    name: "Nephilim",
-    image: nephilim,
-    technologies: [
-      ETechnologies.HTML,
-      ETechnologies.JavaScript,
-      ETechnologies.CSS,
-    ].sort((a, b) => a.localeCompare(b)),
-    readme: "/assets/projects/nephilim/readme/nephilim.md",
-    link: "https://nephilim-official-page.vercel.app/",
-    company: "Freelance",
-  },
+  // {
+  //   name: "Nephilim",
+  //   image: nephilim,
+  //   technologies: [
+  //     ETechnologies.HTML,
+  //     ETechnologies.JavaScript,
+  //     ETechnologies.CSS,
+  //   ].sort((a, b) => a.localeCompare(b)),
+  //   readme: "/assets/projects/nephilim/readme/nephilim.md",
+  //   link: "https://nephilim-official-page.vercel.app/",
+  //   company: "Freelance",
+  // },
 ];
