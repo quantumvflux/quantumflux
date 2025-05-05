@@ -1,6 +1,5 @@
 import { IJobz } from "@/interfaces/interfaces";
 import Image from "next/image";
-import Link from "next/link";
 
 export const JobItem = ({ image, description, name }: IJobz) => {
   return (

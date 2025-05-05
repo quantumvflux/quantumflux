@@ -45,4 +45,6 @@ export enum ETechnologies {
   MaterialUI = "Material UI",
   Strapi = "Strapi",
   Threejs = "Three.js",
+  GSAP = "GSAP",
+  Prisma = "Prisma",
 }

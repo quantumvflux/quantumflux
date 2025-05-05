@@ -3,7 +3,6 @@ import { ETechnologies } from "@/interfaces/interfaces";
 import uitool from "@/public/assets/projects/uitool/uitool.png";
 import uitrade from "@/public/assets/projects/uitrade/utirade.png";
 import riffao from "@/public/assets/projects/riffao/riffao-logo.png";
-import nephilim from "@/public/assets/projects/nephilim/nephilim.png";
 import dager from "@/public/assets/projects/dager/dager.png";
 
 export interface IProject {
@@ -25,6 +24,7 @@ export const projectData: IProject[] = [
       ETechnologies.HTML,
       ETechnologies.TypeScript,
       ETechnologies.Threejs,
+      ETechnologies.GSAP,
     ],
     link: "https://dot-dager-pickles.netlify.app/",
     company: "Undead Devz",
