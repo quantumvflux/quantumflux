@@ -1,6 +1,6 @@
 "use client";
 import { SocialsSection } from "./socials/SocialsSection";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
