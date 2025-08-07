@@ -31,9 +31,10 @@ export const Hero = () => {
             🐱
           </div>
         </div>
-        <div className="flex flex-col items-center gap-2 text-2xl text-[#f5bde6] text-center">
+        {/* <div className="flex flex-col items-center gap-2 text-2xl text-[#f5bde6] text-center"> */}
+        <div className="flex flex-col items-center gap-2 text-2xl text-white text-center">
           <h1 className="font-bold text-6xl">Marcos Baravalle</h1>
-          <p className="text-lg">(or just quantum)</p>
+          <p className="text-2xl">(or just quantum)</p>
           <h2 className="mt-6">Fullstack Web Developer</h2>
         </div>
       </div>

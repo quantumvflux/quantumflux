@@ -28,7 +28,7 @@ export const SocialsSection = () => {
   ];
 
   return (
-    <div className="hidden sm:flex gap-4 items-center">
+    <div className="sm:flex gap-4 items-center">
       {items.map((item) => (
         <SocialItem key={item.url} url={item.url}>
           {item.icon}

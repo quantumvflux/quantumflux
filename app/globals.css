@@ -5,5 +5,11 @@
 @tailwind utilities;
 
 body {
-  background-color: #140114;
+  /* background-color: #140114; */
+  /* background-image: linear-gradient(135deg, #696eff 0%, #f8acff 100%); */
+  /* background-image: linear-gradient(135deg, #9bafd9 0%, #103783black 100%); */
+  /* background-image: linear-gradient(135deg, #133a94 0%, #919bff 100%); */
+  /* background-image: linear-gradient(135deg, #ffa8bd 0%, #242acf 100%); */
+  background-image: linear-gradient(135deg, #392d69 0%, #b57bee 100%);
+  background-position: center;
 }
