@@ -11,7 +11,7 @@ export const ContactSection = () => {
         {contactData.map(({ name, link, color }) => (
           <Link
             key={name}
-            className="w-64 h-12 flex justify-center items-center hover:scale-[1.04] transition-transform ease-in-out duration-300"
+            className="w-64 h-12 flex justify-center items-center hover:scale-[1.04] transition-transform ease-in-out duration-300 font-plex text-xl"
             target="_blank"
             href={link}
             style={{

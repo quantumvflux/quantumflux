@@ -10,7 +10,7 @@ const page = () => {
     <>
       <Main />
       <JobsSection />
-      <ProductsSection />
+      {/* <ProductsSection /> */}
       <WorksSection />
       <SkillSection />
       <ContactSection />

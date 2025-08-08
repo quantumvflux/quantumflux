@@ -6,7 +6,7 @@ export const Main = () => {
     <div>
       <Section>
         <Heading text="about:" />
-        <p className="text-2xl mb-6">
+        <p className="text-xl mb-6 font-plex text-black">
           Hi, everyone! I&apos;m Marcos, a software developer from Argentina and
           I create custom digital marketing solutions and software designed to
           meet the unique needs of your business or personal brand.

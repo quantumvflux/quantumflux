@@ -17,7 +17,7 @@ export const Hero = () => {
     <div className="w-full flex justify-center items-center py-32">
       <div className="flex flex-col justify-center items-center gap-4">
         <div
-          className="rounded-full h-64 w-64 relative border-4 border-[#f5bde6] hover:cursor-pointer hover:scale-105 transition-all"
+          className="rounded-full h-52 w-52 relative border-4 border-[#f5bde6] hover:cursor-pointer hover:scale-105 transition-all mb-6"
           onClick={handleClick}
         >
           <Image
@@ -32,7 +32,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* <div className="flex flex-col items-center gap-2 text-2xl text-[#f5bde6] text-center"> */}
-        <div className="flex flex-col items-center gap-2 text-2xl text-white text-center">
+        <div className="flex flex-col items-center gap-2 text-2xl text-white text-center px-4">
           <h1 className="font-bold text-6xl">Marcos Baravalle</h1>
           <p className="text-2xl">(or just quantum)</p>
           <h2 className="mt-6">Fullstack Web Developer</h2>

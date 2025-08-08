@@ -29,10 +29,10 @@ export const ProjectCard = ({
       <div className="h-64 w-64 relative">
         <Image src={image} alt="Profile" fill className="rounded-md" />
       </div>
-      <div className="mb-2 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <p className="font-bold text-2xl">{name}</p>
         {company && (
-          <p>
+          <p className="font-plex text-md">
             at <span className="font-bold">{company}</span>
           </p>
         )}

@@ -14,8 +14,9 @@ export const JobItem = ({ image, description, name }: IJobz) => {
         />
       </div>
       <div>
-        <p className="font-semibold text-xl">{name}</p>
-        <p>{description}</p>
+        <p className="font-semibold text-2xl font-vt">{name}</p>
+
+        <p className="text-sm font-plex">{description}</p>
       </div>
     </div>
   );

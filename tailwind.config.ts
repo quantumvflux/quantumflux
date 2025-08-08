@@ -14,18 +14,19 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'fira': ["Fira Mono", 'sans-serif'],
-        "dot": ["DotGothic16", "sans-serif"],
-        "vt": ["VT323", "sans-serif"]
+        fira: ["Fira Mono", "sans-serif"],
+        dot: ["DotGothic16", "sans-serif"],
+        vt: ["VT323", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        plex: ["IBM Plex Sans", "sans-serif"],
       },
       colors: {
-        "text": "#4c4f69",
+        text: "#4c4f69",
         "surface-0": "#ccd0da",
-        "crust": "#dce0e8",
-        "base": "#303446"
-      }
+        crust: "#dce0e8",
+        base: "#303446",
+      },
     },
-
   },
   plugins: [],
 };
