@@ -4,6 +4,8 @@ import uitool from "@/public/assets/projects/uitool/uitool.png";
 import uitrade from "@/public/assets/projects/uitrade/utirade.png";
 import riffao from "@/public/assets/projects/riffao/riffao-logo.png";
 import dager from "@/public/assets/projects/dager/dager.png";
+import linkz from "@/public/assets/products/linkz/assets/links.png";
+import vibe from "@/public/assets/projects/vibecommerce/vibecommerce.png";
 
 export interface IProject {
   name: string;
@@ -16,6 +18,21 @@ export interface IProject {
 
 export const projectData: IProject[] = [
   {
+    name: "LinkWorlds",
+    image: linkz,
+    technologies: [
+      ETechnologies.React,
+      ETechnologies.TailwindCSS,
+      ETechnologies.HTML,
+      ETechnologies.TypeScript,
+      ETechnologies.MongoDB,
+      ETechnologies.NestJs,
+      ETechnologies.Redux,
+    ].sort((a, b) => a.localeCompare(b)),
+    link: "https://app.linkworlds.site/auth",
+    company: "Abstract",
+  },
+  {
     name: "Dot Dager",
     image: dager,
     technologies: [
@@ -25,7 +42,7 @@ export const projectData: IProject[] = [
       ETechnologies.TypeScript,
       ETechnologies.Threejs,
       ETechnologies.GSAP,
-    ],
+    ].sort((a, b) => a.localeCompare(b)),
     link: "https://dot-dager-pickles.netlify.app/",
     company: "Undead Devz",
   },
@@ -73,16 +90,18 @@ export const projectData: IProject[] = [
     link: "https://riffao.net/",
     company: "Riffao",
   },
-  // {
-  //   name: "Nephilim",
-  //   image: nephilim,
-  //   technologies: [
-  //     ETechnologies.HTML,
-  //     ETechnologies.JavaScript,
-  //     ETechnologies.CSS,
-  //   ].sort((a, b) => a.localeCompare(b)),
-  //   readme: "/assets/projects/nephilim/readme/nephilim.md",
-  //   link: "https://nephilim-official-page.vercel.app/",
-  //   company: "Freelance",
-  // },
+  {
+    name: "Vibecommerce",
+    image: vibe,
+    technologies: [
+      ETechnologies.React,
+      ETechnologies.TypeScript,
+      ETechnologies.NextJs,
+      ETechnologies.TailwindCSS,
+      ETechnologies.Redux,
+      ETechnologies.CSS,
+    ].sort((a, b) => a.localeCompare(b)),
+    link: "https://vibecommerce.vercel.app/",
+    company: "Personal Project",
+  },
 ];
