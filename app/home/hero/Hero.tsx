@@ -26,6 +26,7 @@ export const Hero = () => {
             src={profile}
             alt="Profile"
             fill
+            sizes="13rem"
             className="object-cover object-top rounded-full"
             priority
           />

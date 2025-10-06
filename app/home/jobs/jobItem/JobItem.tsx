@@ -9,6 +9,7 @@ export const JobItem = ({ image, description, name }: IJobz) => {
           src={image}
           alt={name}
           fill
+          sizes="5rem"
           className="object-cover"
           loading="lazy"
         />
