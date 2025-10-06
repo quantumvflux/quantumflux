@@ -1,5 +1,7 @@
 import Image from "next/image";
-import profile from "@/public/assets/profile-1.jpg";
+// import profile from "@/public/assets/profile-1.jpg";
+import profile from "@/public/assets/profile.png";
+
 import { isDialogPlayingAtom, isGameCompleteAtom } from "@/state/store";
 import { useAtom } from "jotai";
 
@@ -24,7 +26,7 @@ export const Hero = () => {
             src={profile}
             alt="Profile"
             fill
-            className="object-cover rounded-full"
+            className="object-cover object-top rounded-full"
             priority
           />
           <div className={isGameComplete ? gameCompleteStyles : "hidden"}>

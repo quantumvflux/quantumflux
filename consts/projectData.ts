@@ -6,6 +6,10 @@ import riffao from "@/public/assets/projects/riffao/riffao-logo.png";
 import dager from "@/public/assets/projects/dager/dager.png";
 import linkz from "@/public/assets/products/linkz/assets/links.png";
 import vibe from "@/public/assets/projects/vibecommerce/vibecommerce.png";
+import tantra from "@/public/assets/projects/tantratouch/tantratrouch.png";
+import affinit from "@/public/assets/projects/affinit/affinit.png";
+import flightpath from "@/public/assets/projects/flightpath/flightpath.png";
+import set from "@/public/assets/projects/set/set.png";
 
 export interface IProject {
   name: string;
@@ -30,6 +34,67 @@ export const projectData: IProject[] = [
       ETechnologies.Redux,
     ].sort((a, b) => a.localeCompare(b)),
     link: "https://app.linkworlds.site/auth",
+    company: "Abstract",
+  },
+  {
+    name: "Flightpath",
+    image: flightpath,
+    technologies: [
+      ETechnologies.React,
+      ETechnologies.MaterialUI,
+      ETechnologies.GSAP,
+      ETechnologies.Threejs,
+      ETechnologies.HTML,
+      ETechnologies.TypeScript,
+      ETechnologies.NestJs,
+      ETechnologies.Redux,
+    ].sort((a, b) => a.localeCompare(b)),
+    link: "https://affinit.netlify.app/",
+    company: "Abstract",
+  },
+  {
+    name: "Affini-T",
+    image: affinit,
+    technologies: [
+      ETechnologies.React,
+      ETechnologies.MaterialUI,
+      ETechnologies.GSAP,
+      ETechnologies.HTML,
+      ETechnologies.TypeScript,
+      ETechnologies.NestJs,
+      ETechnologies.Redux,
+    ].sort((a, b) => a.localeCompare(b)),
+    link: "https://affinit.netlify.app/",
+    company: "Abstract",
+  },
+  {
+    name: "Set Industry",
+    image: set,
+    technologies: [
+      ETechnologies.React,
+      ETechnologies.MaterialUI,
+      ETechnologies.GSAP,
+      ETechnologies.HTML,
+      ETechnologies.TypeScript,
+      ETechnologies.NestJs,
+      ETechnologies.Redux,
+    ].sort((a, b) => a.localeCompare(b)),
+    link: "https://set-mdx.netlify.app/",
+    company: "Abstract",
+  },
+  {
+    name: "Tantra Touch",
+    image: tantra,
+    technologies: [
+      ETechnologies.React,
+      ETechnologies.MaterialUI,
+      ETechnologies.GSAP,
+      ETechnologies.HTML,
+      ETechnologies.TypeScript,
+      ETechnologies.NestJs,
+      ETechnologies.Redux,
+    ].sort((a, b) => a.localeCompare(b)),
+    link: "https://www.tantratouch.com/",
     company: "Abstract",
   },
   {

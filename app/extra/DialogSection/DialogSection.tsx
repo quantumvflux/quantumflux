@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import profile from "@/public/assets/profile-1.jpg";
+// import profile from "@/public/assets/profile-1.jpg";
+import profile from "@/public/assets/profile.png";
 import { TypeWriter } from "./typeWritter/TypeWritter";
 import { VscTriangleDown } from "react-icons/vsc";
 import {
@@ -12,7 +13,6 @@ import { useState } from "react";
 import { DialogOptionsSection } from "./dialogOptionsSection/DialogOptionsSection";
 import { isDialogPlayingAtom, isGameCompleteAtom } from "@/state/store";
 import { useAtom } from "jotai";
-import { AiOutlineClose } from "react-icons/ai";
 
 export const DialogSection = () => {
   const [dialogIndex, setDialogIndex] = useState<number>(0);
@@ -45,7 +45,7 @@ export const DialogSection = () => {
           src={profile}
           alt="Profile"
           fill
-          className="rounded-md object-cover"
+          className="rounded-md object-cover object-top"
         />
       </div>
       <div className="h-60 md:h-[250px] w-full p-2 md:p-8 text-2xl relative">
