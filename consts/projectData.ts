@@ -49,7 +49,7 @@ export const projectData: IProject[] = [
       ETechnologies.NestJs,
       ETechnologies.Redux,
     ].sort((a, b) => a.localeCompare(b)),
-    link: "https://affinit.netlify.app/",
+    link: "https://flightpath-eight.vercel.app/",
     company: "Abstract",
   },
   {
