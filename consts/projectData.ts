@@ -33,7 +33,7 @@ export const projectData: IProject[] = [
       ETechnologies.NestJs,
       ETechnologies.Redux,
     ].sort((a, b) => a.localeCompare(b)),
-    link: "https://app.linkworlds.site/auth",
+    link: "https://linkworlds.site/",
     company: "Abstract",
   },
   {
